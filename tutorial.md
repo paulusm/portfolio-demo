@@ -30,13 +30,17 @@ conda install jupyter-book
     jupyter-book init --gh-pages
 ```
 
-4. Create Remote
+4. Create Remote and Populate
 
     1. Create a new repository on github.com
+    2. Configure to use GitHub actions
     2. Add remote to your local 
 
 ``` shell
  git remote add origin git@github.com:paulusm/portfolio-demo.git
+ git add .
+ git commit -a -m "initialise"
+ git push -u origin main
 ```
 
 
